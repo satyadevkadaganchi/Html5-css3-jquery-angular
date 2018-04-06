@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            figure{
+                border: 2px solid blue;
+                text-align: center;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Content based semantic tags in HTML5</h3>
+        <hr/>
+        <br/>
+        <input type="button" onclick="f1()" value="Login" />
+        <dialog id="d1">
+	 
+                <legend>User Login</legend>	
+                User Name  : <input type="text" name="t1">
+                <br><br>
+                Password  : <input type="password" name="t2">
+                <br><br>
+                <input type="submit" value="Login">	 
+                <input type="button" onclick="f2()" value="Cancel">	
+        </dialog>
+         
+        <figure >
+            <img src="abclogo.png" alt="image here" width="400" height="200"/>
+            <figcaption >
+                    Fig: I am the caption of image
+            </figcaption>
+        </figure>
+        
+        <mark style="background-color: aqua">Note: If you get this product today, you will get 35%               discount. 
+        </mark>
+        <br/><br/>
+        
+        <details>
+            <summary>
+                Show/Hide Product Details.
+            </summary>
+            <ul>
+                <li>20 W Speaker Output</li>
+                <li>1366 x 768 HD Ready - Great picture quality</li>
+                <li>60 Hz : Standard blur-free picture quality</li>
+                <li>3 x HDMI : For set top box, consoles and Blu-ray             players</li>
+                <li>2 x USB : Easily connect your digital camera, camcorder     or USB device
+                </li>
+            </ul>
+        </details>
+        <br/><br/>
+        
+        Product delivery status: <progress min="1" max="100" value="80">                            </progress>
+        <br/><br/>
+        
+        <script>
+                
+                function  f1()
+                {
+                    var obj = document.getElementById("d1");
+                    obj.showModal();
+                }
+
+                function  f2()
+                {
+                    var obj = document.getElementById("d1");
+                    obj.close();
+                }
+
+                
+        </script>
+        
+    </body>
+</html>
